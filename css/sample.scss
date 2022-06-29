@@ -13,6 +13,29 @@ body {
                 background-image: none;
                 background-color: #FFFFFF;
             }
+            ul {
+                .nav-link {
+                    font-size: 26px;
+                    color: #FFFFFF;
+                    transition: 0.5s ease-in-out;
+                    @media (max-width:991px) {
+                        text-align: center;
+                        color: #192D79 !important;
+                    }
+                    &:hover{
+                        transform: translateY(-5px);
+                        color: #FCFF9F;
+                        @media (max-width:991px) {
+                            color: #4868e6;
+                        }
+                    }
+                }
+                .nav-link.active {
+                    @media (max-width:991px) {
+                        color: #f3ce1a !important;
+                    }
+                }
+            }
         }
 
         main.sample03-main {
@@ -270,10 +293,7 @@ body {
                     @media (max-width:1199px) {
                         padding: 0px 10px;
                     }
-                    @media (max-width:991px) {
-                        text-align: center;
-                        color: #192D79;
-                    }
+
 
                     img {
                         width: 40px;
